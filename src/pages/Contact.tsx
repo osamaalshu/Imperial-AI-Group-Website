@@ -39,6 +39,7 @@ function Contact() {
               <Link to="/" className="hover:text-[#0000CD]" style={{ color: '#6F8093' }}>Home</Link>
               <Link to="/conference" className="hover:text-[#0000CD]" style={{ color: '#6F8093' }}>Conference</Link>
               <Link to="/hackathon" className="hover:text-[#0000CD]" style={{ color: '#6F8093' }}>Hackathon</Link>
+              <Link to="/members" className="hover:text-[#0000CD]" style={{ color: '#6F8093' }}>Members</Link>
               <Link to="/contact" className="text-[#0000CD]" style={{ fontWeight: 500 }}>Contact</Link>
             </nav>
           </div>
@@ -159,6 +160,7 @@ function Contact() {
               <Link to="/" className="text-white hover:text-opacity-80">Home</Link>
               <Link to="/conference" className="text-white hover:text-opacity-80">Conference</Link>
               <Link to="/hackathon" className="text-white hover:text-opacity-80">Hackathon</Link>
+              <Link to="/members" className="text-white hover:text-opacity-80">Members</Link>
               <Link to="/contact" className="text-white hover:text-opacity-80">Contact</Link>
             </nav>
             <div className="flex space-x-6">
