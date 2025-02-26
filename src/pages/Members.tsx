@@ -114,7 +114,7 @@ function Members() {
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
-            <p className="text-white opacity-80">© 2024 Imperial AI Group. All rights reserved.</p>
+            <p className="text-white opacity-80">© 2025 Imperial AI Group. All rights reserved.</p>
           </div>
         </div>
       </footer>

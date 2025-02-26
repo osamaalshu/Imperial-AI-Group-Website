@@ -61,7 +61,7 @@ function Conference() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Calendar className="h-5 w-5" />
-              <span className="font-medium">Imperial AI Conference - March 9th, 2025</span>
+              <span className="font-medium">Imperial AI Conference - March 15th, 2025</span>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ function Conference() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-2 text-gray-600">
                     <Calendar className="h-5 w-5" />
-                    <span>March 9, 2025</span>
+                    <span>March 15, 2025</span>
                   </div>
                   <div className="flex items-center space-x-2 text-gray-600">
                     <MapPin className="h-5 w-5" />
@@ -174,7 +174,7 @@ function Conference() {
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
-            <p className="text-white opacity-80">© 2024 Imperial AI Group. All rights reserved.</p>
+            <p className="text-white opacity-80">© 2025 Imperial AI Group. All rights reserved.</p>
           </div>
         </div>
       </footer>

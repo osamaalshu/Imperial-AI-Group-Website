@@ -30,7 +30,7 @@ function Hackathon() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Calendar className="h-5 w-5" />
-              <span className="font-medium">Imperial AI Hackathon - March 23-24, 2024</span>
+              <span className="font-medium">Imperial AI Hackathon - March 15 - April 13, 2025</span>
             </div>
             <a 
               href="https://lu.ma/aeumfimb" 
@@ -67,17 +67,17 @@ function Hackathon() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6" style={{ color: '#0000CD' }}>
-              Imperial AI Hackathon 2024
+              Imperial AI Hackathon 2025
             </h1>
             <p className="text-xl mb-8" style={{ color: '#6F8093' }}>
-              Join us for an exciting weekend of innovation, collaboration, and AI development
+              Join us for an exciting month of innovation, collaboration, and AI development
             </p>
             <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-2 text-gray-600">
                     <Calendar className="h-5 w-5" />
-                    <span>March 23-24, 2024</span>
+                    <span>March 15 - April 13, 2025</span>
                   </div>
                   <div className="flex items-center space-x-2 text-gray-600">
                     <Clock className="h-5 w-5" />
@@ -167,7 +167,7 @@ function Hackathon() {
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
-            <p className="text-white opacity-80">© 2024 Imperial AI Group. All rights reserved.</p>
+            <p className="text-white opacity-80">© 2025 Imperial AI Group. All rights reserved.</p>
           </div>
         </div>
       </footer>

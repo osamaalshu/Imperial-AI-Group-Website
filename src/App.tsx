@@ -22,7 +22,7 @@ function App() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
                   <Calendar className="h-5 w-5" />
-                  <span className="font-medium">Join us for the Imperial AI Conference - March 9th, 2025</span>
+                  <span className="font-medium">Join us for the Imperial AI Conference - March 15th, 2025</span>
                 </div>
                 <Link to="/conference" className="text-white hover:text-opacity-80 transition">
                   View Details →
@@ -35,7 +35,7 @@ function App() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
                   <Calendar className="h-5 w-5" />
-                  <span className="font-medium">Imperial AI Hackathon - March 23-24, 2024</span>
+                  <span className="font-medium">Imperial AI Hackathon - March 15 - April 13, 2025</span>
                 </div>
                 <Link to="/hackathon" className="text-white hover:text-opacity-80 transition">
                   Register Now →
@@ -79,7 +79,7 @@ function App() {
                     <div className="space-y-4">
                       <div className="flex items-center space-x-2 text-gray-600">
                         <Calendar className="h-5 w-5" />
-                        <span>March 9, 2025</span>
+                        <span>March 15, 2025</span>
                       </div>
                       <div className="flex items-center space-x-2 text-gray-600">
                         <MapPin className="h-5 w-5" />
@@ -108,13 +108,13 @@ function App() {
           <section className="py-16 bg-white">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-8" style={{ color: '#0000CD' }}>Imperial AI Hackathon 2024</h2>
+                <h2 className="text-4xl font-bold text-center mb-8" style={{ color: '#0000CD' }}>Imperial AI Hackathon 2025</h2>
                 <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="space-y-4">
                       <div className="flex items-center space-x-2 text-gray-600">
                         <Calendar className="h-5 w-5" />
-                        <span>March 23-24, 2024</span>
+                        <span>March 15 - April 13, 2025</span>
                       </div>
                       <div className="flex items-center space-x-2 text-gray-600">
                         <MapPin className="h-5 w-5" />
@@ -129,7 +129,7 @@ function App() {
                         <span>Exciting Prizes & Opportunities</span>
                       </div>
                       <p className="text-gray-700 mt-4">
-                        Join us for an exciting weekend of innovation and collaboration. Work with talented students from top UK universities, receive guidance from industry mentors, and compete for amazing prizes.
+                        Join us for an exciting month of innovation and collaboration. Work with talented students from top UK universities, receive guidance from industry mentors, and compete for amazing prizes.
                       </p>
                       <div className="mt-6">
                         <a 
@@ -219,7 +219,7 @@ function App() {
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </div>
-                <p className="text-white opacity-80">© 2024 Imperial AI Group. All rights reserved.</p>
+                <p className="text-white opacity-80">© 2025 Imperial AI Group. All rights reserved.</p>
               </div>
             </div>
           </footer>
