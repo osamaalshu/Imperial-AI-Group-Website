@@ -26,7 +26,7 @@ const members = [
   },
   {
     name: "Maxime Vergnaud",
-    role: "Head of Events",
+    role: "Head of IX Events",
   }
 ];
 

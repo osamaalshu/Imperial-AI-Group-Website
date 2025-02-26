@@ -3,6 +3,24 @@ import { Link } from 'react-router-dom';
 import { MapPin, Mail, Linkedin, Building2, Trophy, Users, Presentation, Calendar, Clock } from 'lucide-react';
 import Logo from '../components/Logo';
 
+const sponsors = [
+  { name: "OpenAI", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" },
+  { name: "Anthropic", logo: "https://anthropic.com/images/logo.svg" },
+  { name: "Camel.ai", logo: "https://camel-ai.org/logo.svg" },
+  { name: "Mistral.ai", logo: "https://mistral.ai/images/logo-dark.svg" },
+  { name: "SuperteamUK", logo: "https://superteam.fun/logo.svg" },
+  { name: "Levia Protocol", logo: "https://levia.ai/logo.svg" },
+  { name: "AI16Z", logo: "https://a16z.com/wp-content/themes/a16z/assets/images/logo.svg" },
+  { name: "Virtual Protocol", logo: "https://virtual.protocol/logo.svg" },
+  { name: "Flock.io", logo: "https://flock.io/logo.svg" },
+  { name: "Venice.ai", logo: "https://venice.ai/logo.svg" },
+  { name: "Animoca Brands", logo: "https://www.animocabrands.com/assets/logo.svg" },
+  { name: "Aipotheosis Lab", logo: "https://aipotheosis.com/logo.svg" },
+  { name: "RockawayX", logo: "https://rockawayx.com/logo.svg" },
+  { name: "OLAS Lab", logo: "https://olas.network/logo.svg" },
+  { name: "DeSciWorld", logo: "https://desci.world/logo.svg" }
+];
+
 function Hackathon() {
   return (
     <div className="min-h-screen bg-white">
@@ -104,6 +122,27 @@ function Hackathon() {
                 <h3 className="text-lg font-semibold mb-2">Prizes</h3>
                 <p className="text-gray-600">Win exciting prizes and potential internship opportunities</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#0000CD' }}>Our Sponsors</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+              {sponsors.map((sponsor, index) => (
+                <div 
+                  key={index}
+                  className="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center"
+                >
+                  <div className="flex items-center justify-center">
+                    <span className="text-lg font-semibold text-gray-800 text-center">{sponsor.name}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
