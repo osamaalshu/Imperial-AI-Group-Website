@@ -1,25 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Mail, Linkedin, Building2, Trophy, Users, Presentation, Calendar, Clock } from 'lucide-react';
+import { MapPin, Mail, Linkedin, Building2, Trophy, Users, Calendar, Clock } from 'lucide-react';
 import Logo from '../components/Logo';
 
-const sponsors = [
-  { name: "OpenAI", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" },
-  { name: "Anthropic", logo: "https://anthropic.com/images/logo.svg" },
-  { name: "Camel.ai", logo: "https://camel-ai.org/logo.svg" },
-  { name: "Mistral.ai", logo: "https://mistral.ai/images/logo-dark.svg" },
-  { name: "SuperteamUK", logo: "https://superteam.fun/logo.svg" },
-  { name: "Levia Protocol", logo: "https://levia.ai/logo.svg" },
-  { name: "AI16Z", logo: "https://a16z.com/wp-content/themes/a16z/assets/images/logo.svg" },
-  { name: "Virtual Protocol", logo: "https://virtual.protocol/logo.svg" },
-  { name: "Flock.io", logo: "https://flock.io/logo.svg" },
-  { name: "Venice.ai", logo: "https://venice.ai/logo.svg" },
-  { name: "Animoca Brands", logo: "https://www.animocabrands.com/assets/logo.svg" },
-  { name: "Aipotheosis Lab", logo: "https://aipotheosis.com/logo.svg" },
-  { name: "RockawayX", logo: "https://rockawayx.com/logo.svg" },
-  { name: "OLAS Lab", logo: "https://olas.network/logo.svg" },
-  { name: "DeSciWorld", logo: "https://desci.world/logo.svg" }
-];
+const sponsors = {
+  gold: [
+    { name: "Venice.ai", logo: "/sponsors/venice.svg" },
+    { name: "Flock.io", logo: "/sponsors/flock.png" },
+    { name: "DeSciWorld", logo: "/sponsors/desci.png" },
+    { name: "Nerd Knowledge Network", logo: "/sponsors/nkn.png" },
+    { name: "ACI Dev", logo: "/sponsors/acidev.svg" },
+    { name: "OLAS", logo: "/sponsors/olas.png" }
+  ],
+  silver: [
+    { name: "RockawayX", logo: "/sponsors/rockaway.png" },
+    { name: "Assuster", logo: "/sponsors/assuster.png" },
+    { name: "EDUCHAIN", logo: "/sponsors/educhain.png" },
+    { name: "Innovation Lab", logo: "/sponsors/innovationlab.png" },
+    { name: "Fetch.ai", logo: "/sponsors/fetch.png" }
+  ],
+  partners: [
+    { name: "Levia Protocol" },
+    { name: "Solana" },
+    { name: "AI16Z" },
+    { name: "SuperteamUK" },
+    { name: "Virtual Protocol" },
+    { name: "Anthropic" }
+  ]
+};
 
 function Hackathon() {
   return (
@@ -130,26 +138,77 @@ function Hackathon() {
       {/* Sponsors Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#0000CD' }}>Our Sponsors</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-              {sponsors.map((sponsor, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center"
-                >
-                  <div className="flex items-center justify-center">
-                    <span className="text-lg font-semibold text-gray-800 text-center">{sponsor.name}</span>
+          <div className="max-w-6xl mx-auto space-y-20">
+            {/* Gold Sponsors */}
+            <div>
+              <h3 className="text-4xl font-bold text-center mb-12" style={{ color: '#B8860B' }}>Gold Sponsors</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+                {sponsors.gold.map((sponsor, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center justify-center p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                    style={{ backgroundColor: '#B8860B' }}
+                  >
+                    <img 
+                      src={sponsor.logo} 
+                      alt={sponsor.name} 
+                      className="h-16 w-auto object-contain"
+                      style={{
+                        filter: 'brightness(1.1) contrast(1.2)'
+                      }}
+                    />
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+
+            {/* Silver Sponsors */}
+            <div>
+              <h3 className="text-4xl font-bold text-center mb-12" style={{ color: '#808080' }}>Silver Sponsors</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+                {sponsors.silver.map((sponsor, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center justify-center p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                    style={{ backgroundColor: '#808080' }}
+                  >
+                    <img 
+                      src={sponsor.logo} 
+                      alt={sponsor.name} 
+                      className="h-14 w-auto object-contain"
+                      style={{
+                        filter: 'brightness(1.1) contrast(1.2)'
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Industrial Partners */}
+            <div>
+              <h3 className="text-4xl font-bold text-center mb-12" style={{ color: '#0000CD' }}>Industrial Partners</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+                {sponsors.partners.map((partner, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center justify-center p-8 text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                    style={{ 
+                      backgroundColor: 'rgba(0, 0, 205, 0.1)',
+                      border: '2px solid rgba(0, 0, 205, 0.2)'
+                    }}
+                  >
+                    <span className="text-xl font-semibold" style={{ color: '#0000CD' }}>{partner.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-[#0000CD]">
+      <footer className="py-8 bg-[#0000CD] mt-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-center space-y-6">
             <nav className="flex space-x-8">
